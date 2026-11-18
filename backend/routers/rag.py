@@ -56,14 +56,22 @@ STUB_ENTRIES = [
 ]
 
 
+import re as _re
+
+def _sanitise_query(q: str) -> str:
+    """Strip HTML tags from query before reflecting it in the response."""
+    return _re.sub(r"<[^>]+>", "", q).strip()
+
+
 @router.get("/search")
-def search_knowledge(q: str = Query(..., min_length=2), limit: int = 5,
+def search_knowledge(q: str = Query(..., min_length=2, max_length=1000), limit: int = 5,
                      evidence_only: bool = False):
     """
     Keyword search over licence-verified scientific knowledge base.
     Returns entries with source attribution and licence information.
     """
-    q_lower = q.lower()
+    safe_q = _sanitise_query(q)
+    q_lower = safe_q.lower()
     results = []
     for entry in STUB_ENTRIES:
         # Simple keyword match — production: vector + BM25 hybrid
@@ -72,7 +80,7 @@ def search_knowledge(q: str = Query(..., min_length=2), limit: int = 5,
             results.append(entry)
 
     return {
-        "query": q,
+        "query": safe_q,
         "count": len(results[:limit]),
         "results": results[:limit],
         "note": "All results from licence-verified sources (CC0, CC-BY, metadata-only). No patient data.",

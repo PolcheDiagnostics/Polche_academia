@@ -11,12 +11,15 @@ import AITutor from "./AITutor";
 import Assessment from "./Assessment";
 import MolecularExplorer from "./MolecularExplorer";
 import PowerPointStudio from "./PowerPointStudio";
+import MTBSimulator from "./MTBSimulator";
+import VirtualLab from "./VirtualLab";
 
 const NAV_ITEMS: { id: NavSection; label: string; icon: string; roles: string[]; badge?: string }[] = [
   { id: "home", label: "Dashboard", icon: "🏠", roles: ["student", "faculty", "director", "organiser"] },
   { id: "curriculum", label: "Curriculum", icon: "📚", roles: ["student", "faculty", "director", "organiser"] },
   { id: "molecular-explorer", label: "Pathway Explorer", icon: "🧬", roles: ["student", "faculty", "director"] },
-  { id: "ngs-studio", label: "NGS Studio", icon: "🔬", roles: ["student", "faculty", "director"] },
+  { id: "virtual-lab", label: "Virtual Lab", icon: "🔬", roles: ["student", "faculty", "director"] },
+  { id: "ngs-studio", label: "NGS Studio", icon: "🧪", roles: ["student", "faculty", "director"] },
   { id: "ai-tutor", label: "AI Tutor", icon: "🤖", roles: ["student", "faculty"] },
   { id: "assessment", label: "Assessments", icon: "📝", roles: ["student", "faculty", "director"] },
   { id: "pptx-studio", label: "Slide Studio", icon: "🎯", roles: ["faculty", "director"] },
@@ -42,8 +45,9 @@ export default function Dashboard({ user, onLogout }: { user: User; onLogout: ()
       case "ai-tutor": return <AITutor />;
       case "assessment": return <Assessment />;
       case "molecular-explorer": return <MolecularExplorer />;
+      case "virtual-lab": return <VirtualLab />;
       case "pptx-studio": return <PowerPointStudio />;
-      case "mtb-simulator": return <MTBSimulatorPlaceholder />;
+      case "mtb-simulator": return <MTBSimulator />;
       default: return null;
     }
   };
@@ -143,25 +147,3 @@ export default function Dashboard({ user, onLogout }: { user: User; onLogout: ()
   );
 }
 
-function MTBSimulatorPlaceholder() {
-  return (
-    <div className="max-w-2xl mx-auto text-center py-16">
-      <div className="text-6xl mb-4">🏥</div>
-      <h2 className="text-2xl font-bold gradient-text mb-3">Molecular Tumour Board Simulator</h2>
-      <p className="text-slate-400 mb-6">
-        Virtual MTB cases with synthetic patient histories, molecular findings and evidence synthesis.
-        Students present cases, rank evidence and receive faculty feedback.
-      </p>
-      <div className="glass p-4 rounded-xl text-left space-y-3">
-        {["SYNTH-MTB-001: Metastatic BRAF V600E Melanoma — ESCAT ranking exercise", "SYNTH-MTB-002: NSCLC with co-occurring driver mutations — treatment sequencing", "SYNTH-MTB-003: Rare tumour with NTRK3 fusion — tumour-agnostic eligibility"].map(c => (
-          <div key={c} className="flex items-center gap-3 p-3 glass rounded-lg glass-hover cursor-pointer">
-            <span className="text-teal-400">🔬</span>
-            <span className="text-slate-300 text-sm">{c}</span>
-            <span className="ml-auto text-xs glass px-2 py-1 rounded text-teal-400">Weeks 22–24</span>
-          </div>
-        ))}
-      </div>
-      <p className="text-slate-600 text-xs mt-6">MTB Simulator fully implemented in Phase 4 development. Core NGS and assessment features available now.</p>
-    </div>
-  );
-}

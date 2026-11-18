@@ -11,6 +11,7 @@ export type NavSection =
   | "home"
   | "curriculum"
   | "ngs-studio"
+  | "virtual-lab"
   | "ai-tutor"
   | "assessment"
   | "molecular-explorer"
