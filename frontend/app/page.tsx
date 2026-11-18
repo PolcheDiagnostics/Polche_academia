@@ -10,7 +10,7 @@ const DEMO_USERS: Record<string, User> = {
   student: { name: "Dr. Priya Sharma", role: "student", email: "priya.sharma@demo.polche.ac", avatar: "PS" },
   faculty: { name: "Prof. Anguraj Sadanandam", role: "faculty", email: "anguraj.sadanandam@icr.ac.uk", avatar: "AS" },
   director: { name: "Prof. Anguraj Sadanandam", role: "director", email: "anguraj.sadanandam@icr.ac.uk", avatar: "AS" },
-  organiser: { name: "Priya Nair (Organiser)", role: "organiser", email: "priya.nair@polche.ac", avatar: "PN" },
+  organiser: { name: "Dr. Suresh", role: "organiser", email: "priya.nair@polche.ac", avatar: "PN" },
 };
 
 export default function Home() {

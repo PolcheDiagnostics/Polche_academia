@@ -35,7 +35,7 @@ DEMO_USERS = {
     },
     "organiser@polche.ac": {
         "id": "demo_organiser_001",
-        "name": "Programme Organiser",
+        "name": "Dr. Suresh",
         "role": "organiser",
         "email": "organiser@polche.ac",
         "avatar": "PO",
@@ -85,5 +85,5 @@ def demo_accounts():
         {"email": "director@polche.ac", "password": "demo", "role": "director",
          "name": "Course Director"},
         {"email": "organiser@polche.ac", "password": "demo", "role": "organiser",
-         "name": "Programme Organiser"},
+         "name": "Dr. Suresh"},
     ]
