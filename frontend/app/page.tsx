@@ -8,8 +8,8 @@ export type { UserRole, User };
 
 const DEMO_USERS: Record<string, User> = {
   student: { name: "Dr. Priya Sharma", role: "student", email: "priya.sharma@demo.polche.ac", avatar: "PS" },
-  faculty: { name: "Prof. Anguraj Sadanandam", role: "faculty", email: "anguraj.sadanandam@icr.ac.uk", avatar: "AS" },
-  director: { name: "Prof. Anguraj Sadanandam", role: "director", email: "anguraj.sadanandam@icr.ac.uk", avatar: "AS" },
+  faculty: { name: "Faculty Demo", role: "faculty", email: "faculty@polche.ac", avatar: "AS" },
+  director: { name: "Director Demo", role: "director", email: "director@polche.ac", avatar: "AS" },
   organiser: { name: "Dr. Suresh", role: "organiser", email: "priya.nair@polche.ac", avatar: "PN" },
 };
 

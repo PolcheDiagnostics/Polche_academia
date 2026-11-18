@@ -17,7 +17,7 @@ const ROLES = [
     description: "Generate slides, design workshops, review student questions and approve content",
     icon: "🔬",
     color: "from-blue-500 to-indigo-600",
-    example: "Prof. Anguraj Sadanandam",
+    example: "faculty@polche.ac",
   },
   {
     id: "director" as UserRole,
@@ -25,7 +25,7 @@ const ROLES = [
     description: "Manage curriculum, assign faculty, approve content and monitor course readiness",
     icon: "📋",
     color: "from-violet-500 to-purple-600",
-    example: "Prof. Anguraj Sadanandam",
+    example: "faculty@polche.ac",
   },
   {
     id: "organiser" as UserRole,
@@ -69,7 +69,7 @@ export default function LoginPage({ onLogin }: { onLogin: (role: UserRole) => vo
         <p className="text-slate-400 max-w-lg mx-auto text-sm">
           An AI-powered 24-week postgraduate certificate programme for Indian clinicians, pathologists and oncologists.
           <br />
-          <span className="text-teal-400">Scientific Programme Chair: Prof. Anguraj Sadanandam, ICR London</span>
+          <span className="text-teal-400">Certificate in Molecular Diagnostics & Precision Oncology</span>
         </p>
       </div>
 

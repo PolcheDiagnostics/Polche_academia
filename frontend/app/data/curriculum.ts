@@ -53,7 +53,7 @@ export const MODULES: Module[] = [
   },
   {
     id: 5, title: "Precision Oncology", weeks: [13,14,15],
-    faculty: "Prof. Anguraj Sadanandam", facultyEmail: "anguraj.sadanandam@icr.ac.uk",
+    faculty: "TBC", facultyEmail: "faculty@polche.ac",
     description: "Actionable genomic alterations, targeted therapies, immunotherapy biomarkers and precision oncology frameworks.",
     color: "#EF4444",
   },
@@ -65,7 +65,7 @@ export const MODULES: Module[] = [
   },
   {
     id: 7, title: "Advanced Molecular Oncology", weeks: [19,20],
-    faculty: "Prof. Anguraj Sadanandam", facultyEmail: "anguraj.sadanandam@icr.ac.uk",
+    faculty: "TBC", facultyEmail: "faculty@polche.ac",
     description: "Tumour evolution, clonal dynamics, resistance mechanisms and translational research methodologies.",
     color: "#6366F1",
   },
@@ -468,7 +468,7 @@ export const CURRICULUM: Week[] = [
   },
   {
     week: 13, module: "Precision Oncology", moduleId: 5,
-    faculty: "Prof. Anguraj Sadanandam",
+    faculty: "TBC",
     title: "Personalised Medicine Frameworks and Oncotype Classification",
     lectureObjectives: [
       "Define precision oncology frameworks and molecular tumour classification systems",
@@ -499,7 +499,7 @@ export const CURRICULUM: Week[] = [
   },
   {
     week: 14, module: "Precision Oncology", moduleId: 5,
-    faculty: "Prof. Anguraj Sadanandam",
+    faculty: "TBC",
     title: "Targeted Therapies, Resistance Mechanisms and Combination Strategies",
     lectureObjectives: [
       "Classify FDA-approved targeted therapies by drug class and genomic target",
@@ -530,7 +530,7 @@ export const CURRICULUM: Week[] = [
   },
   {
     week: 15, module: "Precision Oncology", moduleId: 5,
-    faculty: "Prof. Anguraj Sadanandam",
+    faculty: "TBC",
     title: "Immunotherapy, Tumour-Agnostic Approvals and Biomarker-Driven Trials",
     lectureObjectives: [
       "Describe immune checkpoint inhibitor mechanisms: PD-1/PD-L1, CTLA-4",
@@ -654,7 +654,7 @@ export const CURRICULUM: Week[] = [
   },
   {
     week: 19, module: "Advanced Molecular Oncology", moduleId: 7,
-    faculty: "Prof. Anguraj Sadanandam",
+    faculty: "TBC",
     title: "Tumour Evolution, Clonal Dynamics and Intratumoural Heterogeneity",
     lectureObjectives: [
       "Apply phylogenetic methods to infer tumour evolutionary history from multi-region sequencing",
@@ -685,7 +685,7 @@ export const CURRICULUM: Week[] = [
   },
   {
     week: 20, module: "Advanced Molecular Oncology", moduleId: 7,
-    faculty: "Prof. Anguraj Sadanandam",
+    faculty: "TBC",
     title: "Systems Biology, Multi-Omics Integration and Clinical Translation",
     lectureObjectives: [
       "Describe multi-omic data integration approaches: genomics, transcriptomics, proteomics, epigenomics",

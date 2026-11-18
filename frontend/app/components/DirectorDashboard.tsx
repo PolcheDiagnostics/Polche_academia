@@ -18,7 +18,7 @@ export default function DirectorDashboard({ user, onNavigate }: { user: User; on
   const reviewItems = [
     { week: 1, title: "Cancer as a Genomic Disease", faculty: "Dr. Suresh", status: "pending-review", priority: "high" },
     { week: 7, title: "NGS Technologies and Applications", faculty: "Dr. Philip Beer", status: "pending-review", priority: "high" },
-    { week: 13, title: "Targeted Therapy Principles", faculty: "Prof. Sadanandam", status: "in-review", priority: "medium" },
+    { week: 13, title: "Targeted Therapy Principles", faculty: "Programme Faculty", status: "in-review", priority: "medium" },
   ];
 
   return (
@@ -115,7 +115,7 @@ export default function DirectorDashboard({ user, onNavigate }: { user: User; on
             { name: "Dr. Nagarajan Kannan", modules: "Molecular Diagnostic Technologies, Lab Quality", weeks: "4–6, 21", status: "confirmed" },
             { name: "Dr. Philip Beer", modules: "Clinical NGS, Liquid Biopsy", weeks: "7–9, 16–18", status: "confirmed" },
             { name: "Dr. Sabarinathan Radhakrishnan", modules: "Clinical Variant Interpretation", weeks: "10–12", status: "confirmed" },
-            { name: "Prof. Anguraj Sadanandam", modules: "Precision Oncology, Advanced", weeks: "13–15, 19–20", status: "chair" },
+            { name: "Programme Faculty", modules: "Precision Oncology, Advanced", weeks: "13–15, 19–20", status: "chair" },
             { name: "Dr. Krisztian Homicsko / Dr. Bhawna Sirohi", modules: "Molecular Tumour Board", weeks: "22–24", status: "confirmed" },
           ].map(f => (
             <div key={f.name} className="glass p-3 rounded-lg">

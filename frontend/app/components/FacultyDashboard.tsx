@@ -4,8 +4,8 @@ import { CURRICULUM, MODULES } from "../data/curriculum";
 
 
 export default function FacultyDashboard({ user, onNavigate }: { user: User; onNavigate: (s: NavSection) => void }) {
-  const assignedModules = MODULES.filter(m => m.faculty.includes("Sadanandam") || m.faculty.includes("Philip") || m.faculty.includes("Suresh"));
-  const myModules = MODULES.filter(m => m.faculty.includes("Sadanandam"));
+  const assignedModules = MODULES.filter(m => m.faculty.includes("Philip") || m.faculty.includes("Suresh"));
+  const myModules = MODULES.filter(m => m.faculty.includes("Philip"));
 
   const contentActions = [
     { label: "Generate Week 1 Slides", icon: "📊", nav: "pptx-studio" as NavSection, color: "from-blue-500 to-indigo-600", status: "Draft ready" },
@@ -28,7 +28,7 @@ export default function FacultyDashboard({ user, onNavigate }: { user: User; onN
               Faculty Studio — <span className="gradient-text">{user.name}</span>
             </h1>
             <p className="text-slate-400 text-sm">
-              Scientific Programme Chair · Certificate in Molecular Diagnostics & Precision Oncology
+              Certificate in Molecular Diagnostics & Precision Oncology
             </p>
           </div>
           <div className="glass px-4 py-2 rounded-lg text-sm text-center">
