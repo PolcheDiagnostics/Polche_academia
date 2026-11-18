@@ -1,1 +1,17 @@
-node_modules/\n.next/\n.env.local\n__pycache__/\n*.pyc\nvenv/\n.env
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Node
+node_modules/
+.next/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
