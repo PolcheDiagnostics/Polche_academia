@@ -33,7 +33,7 @@ const ROLES = [
     description: "Enrolment, scheduling, announcements, attendance and certification management",
     icon: "📊",
     color: "from-orange-500 to-amber-600",
-    example: "Priya Nair",
+    example: "DrSuresh@polche.ac",
   },
 ];
 
